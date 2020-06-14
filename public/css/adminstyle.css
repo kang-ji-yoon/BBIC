@@ -1,0 +1,123 @@
+@font-face {
+    font-family:'Tmon몬소리OTF';
+      src: url(/TmonMonsori.otf.otf);
+      font-family:'KoPub돋움체';
+      src: url(/KoPubDotumMedium.ttf);
+    }
+.background {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #fc6262;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.button{
+    position: absolute;
+    margin-top:517px;
+    margin-left:1111.1px;
+    padding-left:36px;
+    color:white;
+    font-size:39px;
+    letter-spacing:29.1px;
+ width: 349.7px;
+  height: 112.1px;
+    border:3px solid #fc6262;
+    text-align:center;
+  border-radius: 92px;
+    text-shadow: 4px 4px 6px rgba(20, 18, 18, 0.61);
+  box-shadow: 10px 13px 19px 0 rgba(0, 0, 0, 0.18);
+  background-color: #fc6262;
+}
+.phone{
+    position:absolute;
+    margin-top:50px;
+    margin-left:490px;
+     transform: rotate(20deg);
+    width:520px;
+}
+.bbic{
+    position:absolute;
+    width:118px;
+    height:118px;
+    margin-left:24px;
+    margin-top:950px;
+}
+.button:hover{
+    background-color:white;
+    color:black;
+}
+.circlem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+}
+.circle1 {
+    position:absolute;
+    width:1666px;
+    height:1666px;
+    border-radius:833px;
+    filter:alpha(opacity=30);
+    opacity:1;
+    background:rgb(253,187,187);
+    margin:auto;
+    z-index: -5;
+    animation: bigger1 1.5s ease;
+    animation-direction : alternate;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+}
+
+.circle2 {
+    position:absolute;
+    width:1436px;
+    height:1436px;
+    border-radius:718px;
+    filter:alpha(opacity=30);
+    opacity:1;
+    background:rgb(254,225,225);
+    margin:auto;
+    z-index: -4;
+    animation: bigger2 1.5s ease;
+    animation-direction : alternate;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+}
+
+.circle3 {
+    position:absolute;
+    width:1176px;
+    height:1176px;
+    border-radius:588px;
+    filter:alpha(opacity=30);
+    opacity:1;
+    background:rgb(254,242,242);
+    margin:auto;
+    z-index: -3;
+    animation: bigger3 1.5s ease;
+    animation-direction : alternate;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes bigger1 {
+    0% {width:100px;height: 100px;border-radius: 50px;}
+    25%{width: 1666px;height: 1666px;border-radius: 833px;}
+}
+@keyframes bigger2 {
+    0% {width:100px;height: 100px;border-radius: 50px;}
+    50% {width: 1436px;height: 1436px;border-radius: 718px;}
+}
+@keyframes bigger3 {
+    0% {width:100px;height: 100px;border-radius: 50px;}
+    100% {width: 1176px;height: 1176px;border-radius: 588px;}
+}
+.ad{
+    position:absolute;
+    right:0;
+    bottom:0;
+}

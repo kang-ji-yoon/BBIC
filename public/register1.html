@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BBIC : 삑하고 본인인증!</title>
+    <link rel="stylesheet" href="/public/css/register1.css">
+  </head>
+
+  <body class="background">
+    <div class="main">
+        
+        <form method="get" action="/">
+        <input type="submit" class="goback" value="X">
+        </form>
+        
+    <form method="post" action="/">
+    <div id="login"><a>SIGN UP</a></div>
+
+
+  <article>
+    <div id="holder"></div>
+    <p id="status"></p>
+    <p id="image"><input class="upload" type=file name="upload"></p>
+    <p id="size">354px X 472px</p>
+  </article>
+   <script>
+      var upload = document.getElementsByTagName('input')[0],
+          holder = document.getElementById('holder'),
+          state = document.getElementById('status');
+
+      if (typeof window.FileReader === 'undefined') {
+        state.className = 'fail';
+      } else {
+        state.className = 'success';
+        state.innerHTML = ' ';
+      }
+
+      upload.onchange = function (e) {
+        e.preventDefault();
+
+        var file = upload.files[0],
+            reader = new FileReader();
+        reader.onload = function (event) {
+          var img = new Image();
+          img.src = event.target.result;
+          // note: no onload required since we've got the dataurl...I think! :)
+          if (img.width >= 0) { // holder width
+            img.width = 190;
+          }
+          if (img.height >= 0) {
+            img.height =190;
+          }
+          holder.innerHTML = '';
+          holder.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+
+        return false;
+      };
+  </script>
+    <div class="word" id="이름"><a>이름</a></div>
+    <div class="입력" id="이름입력"><input placeholder="띄어쓰기 없이 써 주세요." name="name"></input></div>
+    <div class="line1" id="hr1"><hr></hr></div>
+    <div class="word" id="성별"><a>성별</a></div>
+   <p id="man">
+    <input type="checkbox" id="checkbox1"/>
+    <label for="checkbox1" id="boy">남성</label>
+  </p>
+  <p id="woman">
+    <input type="checkbox" id="checkbox2" />
+    <label for="checkbox2" id="girl">여성</label>
+  </p>
+
+    <div class="word" id="전화번호"><a>전화번호</a></div>
+    <div class="입력" id="번호입력"><input placeholder="띄어쓰기 없이 써 주세요."></input></div>
+    <div class="line1" id="hr2"><hr></hr></div>
+    <div class="word" id="아이디"><a>아이디</a></div>
+    <div class="입력" id="아이디입력"><input placeholder="5글자 이상 입력해 주세요."name="id"></input></div>
+    <div class="line2" id="hr3"><hr></hr></div>
+
+    <div class="word" id="나이"><a>나이</a></div>
+    <div class="입력" id="나이입력"><input id="age"  placeholder=" * *"nmae="age"></input></div>
+    <div id="hr11"><hr></hr></div>
+
+
+    <input type="button" name="중복확인" value="중복확인" id="중복확인" onclick="myFunction">
+    <div class="word" id="비밀번호"><a>비밀번호</a></div>
+    <div class="입력" id="비번입력"><input type="password"  placeholder="6글자 이상 입력해 주세요." name="password"></input></div>
+    <div class="line2" id="hr4"><hr></hr></div>
+    <div class="word" id="비밀번호확인"><a>번호확인</a></div>
+    <div class="입력" id="다시입력"><input type="password"  placeholder="다시한번 입력해 주세요."></input></div>
+    <div class="line2" id="hr5"><hr></hr></div>
+    <div class="word" id="아이핀아이디"><a>아이핀 아이디</a></div>
+    <div class="입력" id="아이핀아이디입력"><input id="a" placeholder="아이핀 아이디를 입력해 주세요."></input></div>
+    <div class="line3" id="hr6"><hr></hr></div>
+    <div class="word" id="아이핀비밀번호"><a>아이핀 비밀번호</a></div>
+      <div class="입력" id="아이핀비번입력"><input id="a" placeholder="아이핀 비밀번호를 입력해 주세요."></input></div>
+    <div class="line3" id="hr7"><hr></hr></div>
+    <div class="word" id="주민등록번호"><a>주민등록번호</a></div>
+    <div class="입력" id="주민앞"><input id="j" placeholder="앞자리를 입력해 주세요."name="birth"></input></div>
+    <a id="jk">-</a>
+    <div class="입력" id="주민뒤"><input id="j" type="password" placeholder="뒷자리를 입력해 주세요."name="barcode"></input></div>
+    <div class="line3" id="hr8"><hr></hr></div>
+    <div class="word" id="기본주소"><a>기본 주소</a></div>
+    <div class="입력" id="기본주소입력"><input id="asdf"  placeholder="주소를 입력해 주세요."></input></div>
+    <div class="line3" id="hr9"><hr></hr></div>
+    <div class="word" id="상세주소"><a>상세 주소</a></div>
+    <div class="입력" id="상세주소입력"><input id="asdff"  placeholder="상세주소를 입력해 주세요."></input></div>
+    <div id="hr10"><hr></hr></div>
+    <input type="submit" name="회원가입" value="회원가입" id="회원가입">
+
+
+    </form>
+    </div>
+  </body>
+</html>

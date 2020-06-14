@@ -1,0 +1,132 @@
+ @font-face {
+font-family:'Tmon몬소리OTF';
+  src: url(/TmonMonsori.otf.otf);
+  font-family:'KoPub돋움체';
+  src: url(/KoPubDotumMedium.ttf);
+}
+body{
+      width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url("/public/picture/admin2.PNG");
+  overflow-x: hidden;
+  overflow-y: hidden;
+    color:white;
+    font-family:'KoPub돋움체';
+    background-size:cover;
+    position:relative;
+}
+.fake{
+    font-family:'Tmon몬소리OTF';
+    background-color:white;
+    width:421px;
+    height:421px;
+    position:absolute;
+    margin-top:141px;
+    left:237px;
+    border: solid #f5f5f5;
+    border-radius:52px;
+    border-width:24px;
+    color:#d3d3d3;
+    font-size:46px;
+    letter-spacing:15.8px;
+    padding-right:0;
+    text-align:center;
+}
+.name{
+    position:absolute;
+    background-color:#a7a7a7;
+    width:421px;
+    height:151px;
+    border-radius:76px;
+    left:237px;
+    top:658px;
+    text-align:justify;
+    line-height:2.2;
+    font-family:'Tmon몬소리OTF';
+    font-size:73px;
+    text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.13);
+    letter-spacing:60px;
+    text-align:center;
+    padding-left:60px;
+}
+.point{
+    position:absolute;
+    background-color:#c31fe5;
+    width:381px;
+    height:151px;
+    border-radius:76px;
+    left:237px;
+    margin-top:854px;
+    text-align:justify;
+    line-height:2.2;
+    font-family:'Tmon몬소리OTF';
+    font-size:73px;
+    text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.13);
+    letter-spacing:18px;
+    padding-left:100px;
+    text-align:left;
+}
+.point span{
+    font-size:45px;
+    letter-spacing:0px;
+}
+.message{
+    position:absolute;
+    top:277px;
+    left:902px;
+    font-family:'Tmon몬소리OTF';
+    font-size:56px;
+    letter-spacing:19.2px;
+    text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.16);
+}
+.message span{
+    font-size:116px;
+    letter-spacing:39.8px;
+}
+.market{
+    position:absolute;
+    font-family:'Tmon몬소리OTF';
+    font-size:46px;
+    letter-spacing:15.8px;
+    top:57px;
+    right:50px;
+}
+.bottom{
+    font-size:22px;
+    position:absolute;
+    font-family:'KoPub돋움체';
+    color:#808080;
+    font-weight:bold;
+    top:1043px;
+    letter-spacing:7px;
+    text-align:center;
+    width:100%;
+}
+.info{
+    position:absolute;
+    font-family: KoPubDotum;
+  font-size: 36px;
+    color:#707070;
+    font-weight: bold;
+    letter-spacing:15.4px;
+    word-spacing:25px;
+    margin-top:582px;
+    margin-left:795px;
+}
+.warn{
+    position:absolute;
+    top:825px;
+    left:795px;
+    width: 760px;
+  height: 124px;
+  font-family: KoPubDotum;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.09;
+  letter-spacing: 19.6px;
+  text-align: left;
+  color: #ca25e1;
+}

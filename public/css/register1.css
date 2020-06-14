@@ -1,0 +1,445 @@
+@font-face {
+  font-family:'Tmon몬소리OTF';
+    src: url(/TmonMonsori.otf.otf);
+    font-family:'KoPub돋움체';
+    src: url(/KoPubDotumMedium.ttf);
+  }
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-image: url("/public/picture/register1.PNG");
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.main
+{
+ margin-top:39px;
+ margin-left: 474px;
+ width: 972px;
+ height: 972px;
+ border-radius: 53px;
+ box-shadow: 15px 15px 10px 0 rgba(0, 0, 0, 0.16);
+ background-color: #ffffff;
+}
+#login
+{
+width: 291px;
+height: 65px;
+font-family: TmonMonsoriOTF;
+font-size: 52px;
+font-weight: 900;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.25;
+letter-spacing: 3.6px;
+text-align: left;
+color: #fc6262;
+margin-left: 361px;
+padding-top: 67px;
+}
+#holder
+{
+  position: absolute;
+  width: 199px;
+  height: 199px;
+  border: solid 3px;
+  border-color: #fc6262;
+  border-radius: 33px;
+  background-color: #ffffff;
+  margin-top: 60px;
+  margin-left: 173px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+#image
+{
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 185px;
+}
+#size
+{
+  color:  #fc6262;
+  font-family: KoPubDotum;
+  position: absolute;
+  padding-left: 230px;
+  margin-top: 280px;
+}
+
+.success
+{
+  position: absolute;
+  font-family: KoPubDotum;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  color: var(--warm-grey);
+  padding-left:20px;
+}
+.word
+{
+  position: absolute;
+  font-family: KoPubDotum;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #707070;
+}
+.line1
+{
+  position: absolute;
+  width: 350px;
+  margin-left: 463px;
+}
+#이름
+{
+  margin-left: 463px;
+  padding-top: 90px;
+}
+#hr1
+{
+  margin-top: 125px;
+}
+#성별
+{
+  margin-left: 463px;
+  margin-top: 155px;
+}
+
+input[type="checkbox"]{
+  width:1px;
+  height:1px;
+  padding:0;
+  border:0 none;
+  margin:0;
+  position:absolute;
+  left:0;
+  top:0;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+}
+label{
+  height:35px;
+  line-height:35px;
+  padding-left:50px;
+  display:inline-block;
+  background:url(https://postfiles.pstatic.net/MjAxODEyMjJfMTg2/MDAxNTQ1NDE0NzMzNDUw.A76OUmBmH-xrl9YUyOQP0qDBm7TKR_mABhfE9aqrswwg.cEeaiFF00WiVhAYibggBKvtAeCgKinlWpWe1v1EPYLwg.PNG.0606sg/%EC%82%AC%EC%9A%A9%EC%9E%90_%EC%A0%95%EC%9D%98_%ED%81%AC%EA%B8%B0_%E2%80%93_1.png?type=w580) no-repeat 0 0;
+  font-size:18px;
+  font-family: KoPubDotum;
+  color: #707070;
+  vertical-align:middle;
+  cursor:pointer;
+  margin-left: 530px;
+}
+input[type="checkbox"]:checked + label{
+  background-position: 0 -35px;
+}
+#boy
+{
+  position: absolute;
+  margin-top: 160px;
+}
+#girl
+{
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 650px;
+}
+#전화번호
+{
+  margin-left: 463px;
+  margin-top:  220px;
+}
+#hr2
+{
+  margin-top: 255px;
+}
+#hr3
+{
+  margin-top:360px;
+}
+#아이디
+{
+  margin-left: 135px;
+  margin-top: 330px;
+}
+.line2
+{
+  position: absolute;
+  width: 350px;
+  margin-left: 135px;
+}
+#중복확인
+{
+  margin-left:515px;
+  margin-top:330px;
+  width: 93px;
+  height: 35.2px;
+  border-radius: 115px;
+  border: 1.8px solid #fc6262 ;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  color:#707070;
+  background-color: rgba(0, 0, 0, 0);
+}
+#중복확인:hover
+{
+  background-color: #fc6262 ;
+  color: #ffffff;
+}
+#비밀번호
+{
+  margin-left: 135px;
+  margin-top: 35px;
+}
+#hr4
+{
+  margin-top: 70px;
+}
+#비밀번호확인
+{
+  margin-left: 515px;
+  margin-top: 35px;
+}
+#hr5
+{
+  margin-left: 515px;
+  margin-top: 70px;
+}
+.line3
+{
+  position: absolute;
+  width: 730px;
+  margin-left: 135px;
+}
+#아이핀아이디
+{
+  margin-left: 135px;
+  margin-top: 105px;
+}
+#hr6
+{
+  margin-left: 135px;
+  margin-top: 140px;
+}
+
+#아이핀비밀번호
+{
+  margin-left: 135px;
+  margin-top: 175px;
+}
+#hr7
+{
+  margin-top: 210px;
+}
+#주민등록번호
+{
+  margin-left: 135px;
+  margin-top: 245px;
+}
+#hr8
+{
+  margin-top: 280px
+}
+#기본주소
+{
+  margin-top:315px;
+  margin-left: 135px;
+}
+#hr9
+{
+  margin-top: 350px;
+}
+#상세주소
+{
+  margin-top:385px;
+  margin-left: 135px;
+}
+#hr10
+{
+  position: absolute;
+  width: 450px;
+  margin-left: 135px;
+  margin-top: 420px;
+}
+#회원가입
+{
+  margin-left:650px;
+  margin-top:380px;
+  width: 150px;
+  height: 50px;
+  border-radius: 115px;
+  border: 1.8px solid #fc6262 ;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  color:#707070;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 18px;
+}
+#회원가입:hover
+{
+  background-color: #fc6262 ;
+  color: #ffffff;
+}
+.입력
+{
+  position: absolute;
+  color: #707070;
+  font-family: KoPubDotum;
+}
+.입력 input
+{
+  font-size:15px;
+  border: 0px;
+  width: 250px;
+  height: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 18px;
+}
+#이름입력
+{
+  margin-left: 500px;
+  margin-top: 80px;
+}
+#번호입력
+{
+  margin-left: 540px;
+  margin-top: 210px;
+}
+#아이디입력
+{
+  margin-top: 320px;
+  margin-left: 190px;
+}
+#비번입력
+{
+  margin-top: 25px;
+  margin-left: 210px;
+}
+#다시입력
+{
+  margin-top: 25px;
+  margin-left: 590px;
+}
+#아이핀아이디입력
+{
+  margin-top: 95px;
+  margin-left: 255px;
+
+}
+#a
+{
+  width: 400px;
+}
+#아이핀비번입력
+{
+  margin-top: 165px;
+  margin-left: 280px;
+}
+#주민앞
+{
+  margin-top: 240px;
+  margin-left: 250px;
+}
+#j
+{
+  font-size:15px;
+  border: 0px;
+  width: 200px;
+  height: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 18px;
+}
+#jk
+{
+  position: absolute;
+  margin-top: 610px;
+  margin-left: -140px;
+  font-size: 25px;
+
+}
+#주민뒤
+{
+  margin-top: 240px;
+  margin-left: 490px;
+}
+#기본주소입력
+{
+  margin-top: 305px;
+  margin-left: 215px;
+}
+#asdf
+{
+  font-size:15px;
+  border: 0px;
+  width: 600px;
+  height: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 18px;
+}
+#상세주소입력
+{
+  margin-top: 375px;
+  margin-left: 215px;
+}
+#asdff
+{
+  font-size:15px;
+  border: 0px;
+  width: 330px;
+  height: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 18px;
+}
+#나이입력
+{
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 700px;
+}
+#hr11
+{
+  position: absolute;
+  margin-top:360px;
+  width: 150px;
+  margin-left: 650px;
+}
+#나이
+{
+  position: absolute;
+  margin-left: 650px;
+  margin-top: 330px;
+}
+#age
+{
+font-size:15px;
+border: 0px;
+width: 50px;
+height: 20px;
+padding-top: 12px;
+padding-bottom: 12px;
+}
+.goback{
+  position:absolute;
+  background-color:#fc6262;
+  width:40px;
+  height:40px;
+  border:none;
+  border-radius:53px;
+  font-size: 25px;
+  color:white;
+  margin-top:35px;
+  margin-left:894px;
+}
+
