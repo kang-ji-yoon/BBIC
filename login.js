@@ -27,7 +27,7 @@ admin.initializeApp({
 var db = admin.database();
 var ref = db.ref("/");
 
-app.listen(80, '110.11.202.207', function() {
+app.listen(3000, function() {
     console.log('익스프레스 서버를 시작했습니다.' + '80');
 });
 
